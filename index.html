@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+
+
+    <!-- ERROR MESSAGE -->
+    <div id="error"></div>
+
+    <!-- FORM LIST  -->
+
+    <div class="formlist">
+        <form action="/" method="get">
+            <h1>Login Details</h1><br>
+            <div class="image">
+                <div id="displayimage">
+                    <img src="./image/1.png" id="img"  alt="Img">
+                </div>
+                <label for="image">Profile Image</label>
+                <input id="image" name="image" type="file" accept="image/png, image/jpg" onchange="readUrl(this)" required>
+     
+            </div>  
+            <br>
+            <div>
+                <label for="name">First Name</label>
+                <input id="firstName" name="FirstName" type="text" placeholder="Enter First Name" required>
+            </div>
+            <br>
+            <div>
+                <label for="name">Last Name</label>
+                <input id="lastName" name="LastName" type="text" placeholder="Enter Last Name" required>
+            </div>
+            <br>
+            <div>
+                <label for="Date of Birth">Date of Birth</label>
+                <input id="date0fBirth" name="Date of Birth" type="date" required>
+            </div>
+            <br> 
+            <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="@.com" required>
+            </div>
+            <br>
+            <div>
+                <label for="PassWord">Password</label>
+                <input id="Password" name="Password" type="Password" placeholder="Enter Password" required>
+            </div>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    </div>
+
+    <!-- script Below-->
+    <script src="./script.js"></script>
+</body>
+</html>
